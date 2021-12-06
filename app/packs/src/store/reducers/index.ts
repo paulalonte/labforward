@@ -1,31 +1,10 @@
 import { AnyAction } from 'redux';
 import _ from 'lodash';
 
-interface Resource {
-  id: number;
-  createdAt: Date;
-  updatedAt: Date;
-}
+import { Resource } from 'entities/Resource';
+import { State } from 'entities/State';
 
-export interface Channel extends Resource {
-  deviceId: number;
-  name: string;
-}
-
-export interface DataPoint extends Resource {
-  channelId: number;
-  value: number;
-}
-
-export interface Device extends Resource {
-  name: string;
-}
-
-export interface State {
-  channels: Record<number, Channel>;
-  dataPoints: Record<number, DataPoint>;
-  devices: Record<number, Device>;
-}
+import * as ActionTypes from '../actions/actions';
 
 const initialState: State = {
   channels: {},
@@ -43,10 +22,10 @@ const normalize = (resources: Array<Resource>) =>
 
 const reducers = (
   state: State = initialState,
-  action: AnyAction = { type: 'DUMMY' }
+  action: AnyAction = { type: '' }
 ): State => {
   switch (action.type) {
-    case 'API_FETCH_SUCCEEDED':
+    case ActionTypes.API_FETCH_SUCCEEDED:      
       return {
         ...state,
         [_.camelCase(action.payload.model)]: {

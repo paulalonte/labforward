@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 
 import store from 'store';
 
-import Home from './Home';
+import Home from './home/Home';
 
 const Routes: FC = () => (
   <Provider store={store}>

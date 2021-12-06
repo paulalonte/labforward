@@ -1,0 +1,29 @@
+.dashboard-card-layout {
+    margin: 1em 0;
+    background: #eee;
+    padding: 1em;
+    border-radius: var(--border-radius); 
+}
+
+.dashboard-heading {
+    padding: 1em 0;
+}
+
+.splitter {
+    margin-bottom: 2em;
+}
+
+.dashboard-card-layout h4 {
+    padding: 1em 0;
+}
+
+.card-container {
+    display: flex;
+    flex-grow: 1;
+    gap: 1em;
+}
+
+.legend {
+    margin-bottom: 2em;
+}
+

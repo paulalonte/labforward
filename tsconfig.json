@@ -2,8 +2,11 @@
   "extends": "@labforward/config/tsconfig",
 
   "compilerOptions": {
+    "jsx": "react",
     "baseUrl": "app/packs/src",
-    "lib": ["es2020", "dom"]
+    "lib": ["es2020", "dom"],
+    "resolveJsonModule": true,
+    "moduleResolution": "node"
   },
 
   "exclude": ["node_modules", "vendor", "public"]

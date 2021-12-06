@@ -1,0 +1,9 @@
+header {
+    padding: var(--spacer);
+    background: var(--primary-color);
+    color: var(--brand-white);
+}
+
+.dashboard {
+    padding: var(--spacer);
+}

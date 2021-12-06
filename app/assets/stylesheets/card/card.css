@@ -1,0 +1,14 @@
+.card {
+    border: 1px solid var(--primary-color);
+    padding: 2em;
+    background: var(--brand-white);
+    border-radius: var(--border-radius);
+}
+
+.card h3 {
+    padding: 0.5em 0;
+}
+
+.card p {
+    padding: 0.2em 0;
+}

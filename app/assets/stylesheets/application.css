@@ -12,4 +12,29 @@
  *
  *= require_tree .
  *= require_self
+ *= require ./home/home.css
+ *= require ./card/card.css
+ *= require ./lflinechart/lflinechart.css
+ *= require ./dashboard/dashboard.css
  */
+
+:root {
+    --page-padding: 2em;
+    --primary-color: #00004d;
+    --brand-white: #fff;
+
+    --spacer: 1em 3em;
+    --border-radius: 6px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: sans-serif;
+}
+
+ 
